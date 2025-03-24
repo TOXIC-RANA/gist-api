@@ -1,19 +1,24 @@
 {
   "name": "gist-api",
-  "version": "1.0.0",
-  "description": "A simple Gist API built with Node.js and MongoDB",
+  "version": "1.0.1",
+  "description": "A simple API for interacting with GitHub Gists",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "mongoose": "^7.0.0"
+    "axios": "^1.6.7",
+    "cors": "^2.8.5"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
-  }
+    "nodemon": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "license": "MIT"
 }
